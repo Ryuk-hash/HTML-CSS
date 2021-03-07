@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 252, 222);
+  height: 100vh;
+
+  /* Initiating The Flexbox Model */
+  display: flex;
+
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Shared Styles for Sections */
+.section {
+  width: 400px;
+
+  background-color: rgb(166, 248, 159);
+
+  border-radius: 50px;
+}
+
+/* imges */
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Date */
+.section .content p:first-of-type {
+  text-align: center;
+}
+
+/* headline */
+.section .content h3 {
+  text-align: right;
+}
+
+/* Improvements */
+
+.section {
+  margin: 20px 40px;
+}
+
+.section .content {
+  padding: 15px;
+}
+
+.section .content p:first-of-type,
+.section .content h3,
+.section .content p:last-of-type {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.section .content p:last-of-type {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.section {
+  transition: transform 350ms ease-in-out;
+}
+
+.section:hover {
+  transform: scale(1.05);
+}

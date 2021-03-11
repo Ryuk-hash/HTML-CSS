@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fcc006;
+  background-color: #ff7052;
+}
+
+body {
+  font-family: 'Segoe UI', Arial;
+  font-size: 18px;
+  font-weight: 200;
+  background-color: #0f9b8e;
+  color: #fff;
+}
+
+section {
+  margin: 30px auto;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+.degree-cel::before {
+  content: ' \00b0 C';
+  font-size: 0.6rem;
+}
+
+#container {
+  padding: 10px;
+}
+
+#container > h1 {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+#container #weather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 5rem;
+  font-size: 0.9rem;
+  padding: 20px;
+  text-align: center;
+}
+
+#container #weather .weather-main p:first-of-type {
+  font-weight: bold;
+}
+
+#container #weather .weather-main,
+#container #weather .weather-extrainfo {
+  margin: 20px 8px;
+}
+
+#container #weather p {
+  margin-bottom: 0.3rem;
+}
+
+#container #weather .weather-extrainfo {
+  align-self: center;
+}
+
+#container #weekdays {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#container .weekday {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin: 2px 5px;
+  text-align: center;
+}
+
+#container .weekday > p:first-of-type {
+  font-weight: bold;
+}
+
+#container .weekday p:first-child,
+#container .weekday p:nth-child(2) {
+  margin-bottom: 1.4rem;
+}
